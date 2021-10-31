@@ -1,14 +1,14 @@
 # ESP32-Restricted-Airspace
-Utilizing Adafruit's Airlift firmware and documentation on alternate ESP32 hardware
+Utilizing Adafruit's Airlift firmware on alternate ESP32 hardware
 
 
 This is what I did to get this to work using an ESP32 DevKitC:
 
 Download the latest ESP32 NINA firmware [from Adafruit available here](https://github.com/adafruit/nina-fw/releases/latest) (also rehosted in this repo)
 
-Install esptool if you don't already have it, not going to go into great detail, pip3 install esptool
+Install esptool if you don't already have it, not going to go into detail, pip3 install esptool
 
-Run the following command, replacing \<port> with the port of your ESP32, and \<firmware> with the NINA firmware you downloaded:
+Plug in your ESP32 and then run the following command, replacing \<port> with the port of your ESP32, and \<firmware> with the NINA firmware you downloaded:
 
 `esptool.py --port <port> --baud 115200 write_flash 0 <firmware>`
 
