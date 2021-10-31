@@ -2,7 +2,7 @@
 Utilizing Adafruit's Airlift firmware on alternate ESP32 hardware
 
 
-This is what I did to get this to work using an ESP32 DevKitC:
+This is what I did to get this to work using an ESP32 DevKitC v4, however this should be applicable to any ESP32:
 
 Download the latest ESP32 NINA firmware [from Adafruit available here](https://github.com/adafruit/nina-fw/releases/latest) (also rehosted in this repo)
 
