@@ -4,6 +4,8 @@ Utilizing Adafruit's Airlift firmware on alternate ESP32 hardware
 
 This is what I did to get this to work using an ESP32 DevKitC v4, however this should be applicable to any ESP32:
 
+(edit: added instructions for using a WEMOS D1 Mini ESP32)
+
 Download the latest ESP32 NINA firmware [from Adafruit available here](https://github.com/adafruit/nina-fw/releases/latest) (also rehosted in this repo)
 
 Install esptool if you don't already have it, not going to go into detail, pip3 install esptool
@@ -17,6 +19,8 @@ On Linux/MacOS, \<port> will be something along the lines of /dev/tty.usb001. On
 Once that uploads successfully to your ESP32, you're ready to start wiring. I'm using the Adafruit Feather RP2040, but **you should be able to use any CircuitPython compatible device**. You can easily redefine the pins in the Python code.
 
 ESP32 pins are given as GPIO numbers, which should be universal across any ESP32 device. 
+
+The only difference to be aware of on the Wemos D1 Mini ESP32 is that while GPIO14 isn't printed on the board, it is accessible via the pin marked "TMS". [See this schematic for full documentation of this board](https://i.imgur.com/lUCYIYf.png)
 
 | ESP32  | Feather RP2040 | Used for                                |
 |--------|----------------|-----------------------------------------|
